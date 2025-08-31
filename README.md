@@ -1,4 +1,3 @@
-Got it 👍 Here’s the **entire README.md** as a single code block so you can just copy-paste it directly into your repo:
 
 ```markdown
 # Noteflow 📝  
@@ -19,10 +18,10 @@ Noteflow lets users **create, update, delete, and manage notes seamlessly** with
 ---
 
 ## 🛠️ Tech Stack  
-- Frontend**: React + TypeScript + Tailwind CSS  
-- Backend**: Node.js + Express.js  
-- Database**: MongoDB  
-- Authentication**: JWT  
+- Frontend: React + TypeScript + Tailwind CSS  
+- Backend: Node.js + Express.js  
+- Database: MongoDB  
+- Authentication: JWT  
 
 ---
 
@@ -41,7 +40,7 @@ Noteflow/
 
 ## ⚙️ Installation & Setup  
 
-1. **Clone the repository**  
+1. Clone the repository 
    ```bash
    git clone https://github.com/heetnandu01/Noteflow.git
    cd Noteflow
