@@ -9,20 +9,20 @@ Noteflow lets users **create, update, delete, and manage notes seamlessly** with
 ---
 
 ## 🚀 Features  
-- ✨ **User-friendly interface** with Tailwind CSS styling  
-- 📌 **Create, Read, Update, Delete (CRUD)** operations for notes  
-- 🔐 **Secure user authentication & authorization**  
-- 📱 **Responsive design** (works across devices)  
-- ⚡ **Fast and optimized API** using Node.js & Express  
-- 🗄️ **Persistent data storage** with MongoDB  
+- ✨ User-friendly interface** with Tailwind CSS styling  
+- 📌 Create, Read, Update, Delete (CRUD)** operations for notes  
+- 🔐 Secure user authentication & authorization**  
+- 📱 Responsive design** (works across devices)  
+- ⚡ Fast and optimized API** using Node.js & Express  
+- 🗄️ Persistent data storage** with MongoDB  
 
 ---
 
 ## 🛠️ Tech Stack  
-- **Frontend**: React + TypeScript + Tailwind CSS  
-- **Backend**: Node.js + Express.js  
-- **Database**: MongoDB  
-- **Authentication**: JWT  
+- Frontend**: React + TypeScript + Tailwind CSS  
+- Backend**: Node.js + Express.js  
+- Database**: MongoDB  
+- Authentication**: JWT  
 
 ---
 
