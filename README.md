@@ -2,18 +2,18 @@
 ```markdown
 # Noteflow 📝  
 
-A modern, full-stack **note-taking application** built with the **MERN stack**, **TypeScript**, and **Tailwind CSS**.  
-Noteflow lets users **create, update, delete, and manage notes seamlessly** with a clean UI and powerful backend support.  
+A modern, full-stack note-taking application built with the MERN stack, TypeScript, and Tailwind CSS.  
+Noteflow lets users create, update, delete, and manage notes seamlessly with a clean UI and powerful backend support.  
 
 ---
 
 ## 🚀 Features  
-- ✨ User-friendly interface** with Tailwind CSS styling  
-- 📌 Create, Read, Update, Delete (CRUD)** operations for notes  
-- 🔐 Secure user authentication & authorization**  
-- 📱 Responsive design** (works across devices)  
-- ⚡ Fast and optimized API** using Node.js & Express  
-- 🗄️ Persistent data storage** with MongoDB  
+- ✨ User-friendly interface with Tailwind CSS styling  
+- 📌 Create, Read, Update, Delete (CRUD) operations for notes  
+- 🔐 Secure user authentication & authorization 
+- 📱 Responsive design (works across devices)  
+- ⚡ Fast and optimized API using Node.js & Express  
+- 🗄️ Persistent data storage with MongoDB  
 
 ---
 
