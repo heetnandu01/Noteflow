@@ -84,8 +84,3 @@ Noteflow/
      cd client
      npm run dev
      ```
-
-
-
-Do you want me to also **add ready-made badge code (for Tech Stack, License, Stars, etc.)** at the top so your README looks even more professional?
-```
