@@ -11,7 +11,7 @@ const router = express.Router();
 
 router.use(authenticateToken); // Apply authentication middleware to all routes
 
-router.post('/create', createNote);
+router.post('/', createNote);
 router.get('/', getNotes);
 router.delete('/:id', deleteNote);
 router.put('/:id', updateNote);

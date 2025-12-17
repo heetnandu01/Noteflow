@@ -18,7 +18,7 @@ export const createNote = async (req: AuthRequest, res: Response): Promise<void>
         const note = new Note({
             title,
             content,
-            user: userId
+            userId: userId
         });
 
         await note.save();
@@ -69,7 +69,7 @@ export const deleteNote = async (req:AuthRequest,res:Response): Promise<void> =>
         const {id} = req.params;// Assuming the note ID is passes as a url parameter
         const userId = req.user!.id; // get the user ID from the authenticated user
 
-        const note = await Note.findOneAndDelete({id:id,userId});
+        const note = await Note.findOneAndDelete({_id:id,userId});
 
         if(!note){
             res.status(404).json({error: 'Note not found or you do not have permission to delete this note'});
@@ -99,7 +99,7 @@ export const updateNote = async(req:AuthRequest,res:Response): Promise<void> => 
        }
 
        const note = await Note.findOneAndUpdate(
-        {id:id,userId},
+        {_id:id,userId},
         {title,content},
         {new:true} // Return the updated note 
        );
