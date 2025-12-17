@@ -1,8 +1,9 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import app from './app';
-import authRoutes from './src/routes/authRoutes';
-import noteRoutes from './src/routes/noteRoutes';
+import authRoutes from './routes/authRoutes';
+import noteRoutes from './routes/noteRoutes';
+
 
 
 dotenv.config();

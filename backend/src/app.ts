@@ -3,8 +3,9 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
-import authRoutes from './src/routes/authRoutes.js';
-import noteRoutes from './src/routes/noteRoutes.js';
+import authRoutes from './routes/authRoutes.js';
+import noteRoutes from './routes/noteRoutes.js';
+
 
 const app = express();
 
