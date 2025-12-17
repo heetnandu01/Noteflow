@@ -81,6 +81,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         dispatch({ type: 'LOGIN', payload: response.data.user });
       } catch (err) {
         const error = err as AxiosError;
+        // Silently handle 401 (not authenticated) on initial load
+        // Don't show error messages for expected unauthenticated state
         if (error.response?.status !== 401) {
           console.error('Auth check failed:', error.message);
         }
