@@ -9,7 +9,17 @@ import noteRoutes from './routes/noteRoutes.js';
 
 const app = express();
 
-app.use(helmet());
+// CORS must be before helmet
+app.use(cors({
+  origin: process.env.CLIENT_URL || 'http://localhost:5173',
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'Cookie']
+}));
+
+app.use(helmet({
+  crossOriginResourcePolicy: false,
+}));
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, 
@@ -17,13 +27,6 @@ const limiter = rateLimit({
   message: 'Too many requests from this IP, please try again later.'
 });
 app.use(limiter);
-
-app.use(cors({
-  origin: process.env.CLIENT_URL ,
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'Cookie']
-}));
 
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
