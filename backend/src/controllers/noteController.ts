@@ -1,6 +1,6 @@
 import { Response } from "express";
 import Note from "../models/Note.js";
-import { AuthRequest } from "../middleware/auth";
+import { AuthRequest } from "../middleware/auth.js";
 
 
 

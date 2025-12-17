@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
 
-export const sendOTPEmail = async (email: string, otp: string) => {
+const sendOTP = async (email: string, otp: string, purpose: 'signup' | 'signin') => {
   try {
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
@@ -12,12 +12,15 @@ export const sendOTPEmail = async (email: string, otp: string) => {
       },
     });
 
+    const subject = purpose === 'signup' ? 'Welcome to NoteFlow - Verify Your Email' : 'NoteFlow Sign In Verification';
+    const heading = purpose === 'signup' ? 'Welcome to NoteFlow!' : 'Sign In Verification';
+
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: email,
-      subject: 'Your OTP for NoteFlow',
+      subject: subject,
       html: `
-        <h2>Email Verification</h2>
+        <h2>${heading}</h2>
         <p>Your OTP is: <strong>${otp}</strong></p>
         <p>This OTP will expire in 10 minutes.</p>
       `,
@@ -29,3 +32,5 @@ export const sendOTPEmail = async (email: string, otp: string) => {
     throw new Error('Failed to send OTP');
   }
 };
+
+export default { sendOTP };
