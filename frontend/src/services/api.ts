@@ -2,7 +2,7 @@ import axios from "axios";
 import type { SigninData, SignupData } from "../types";
 
 
-const API_BASE_URl = import.meta.env.VITE_API_URL;
+const API_BASE_URl = 'http://localhost:5000/api';
 
 const api = axios.create({
     baseURL: API_BASE_URl,
